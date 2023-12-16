@@ -55,3 +55,34 @@ function iterateAndLogWithWhile(n) {
 }
 
 ******3
+    
+function weirdDivisionWithFor(n) {
+    for ( i = 1 ; i<n; i++){
+        if ( i%3===0){
+            console.log( " julia")
+        }
+        else if ( i%5===0){
+       console.log("james")
+        }
+        else {
+            console.log( i )
+        }
+    }
+    
+            
+        
+
+
+}
+
+******4
+function laughWithFor(number) {
+
+ var  result = ""
+    for ( i=0 ; i< number ; i++){
+        result = result + "ha"
+        
+    }
+    return result
+
+}
