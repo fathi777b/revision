@@ -1,0 +1,113 @@
+
+// REVESION 28/12/2023
+**1
+
+function addOne (array ) {
+  var arr=[]
+    for ( i=0; i < array.length ; i++){
+        arr.push(array[i]+1)
+    }
+
+    return arr 
+    
+    
+}
+
+
+***2
+
+  function filter(array, predicate) {
+    var acc = [];
+    each(array, function (element, index) {
+      
+      if (predicate(element, index)) {
+        
+        acc.push(element);
+      }
+    });
+    return acc;
+  }
+
+
+  function myarray( array ) {
+    return filter ( array, function(element , i ){
+        return i% 2 ===0
+    })
+}
+***3
+function doubleAll ( nums){
+    var result = []
+        return map ( nums , function ( number ){
+           return  number*2
+        })
+}
+
+***
+function squareall ( nums){
+    var result = []
+        return map ( nums , function ( number ){
+           return  number**2
+        })
+}
+***
+function doubleAll ( strings){
+    var result = []
+        return map ( strings , function ( str ){
+           return str.length 
+        })
+}
+
+***4
+
+function odds ( nums) {
+    return filter ( nums, function ( element , i ){
+        return element%2 !==0
+    })
+}
+***
+function positef( nums) {
+    return filter ( nums, function ( element , i ){
+        return element>0
+    })
+}
+***
+function negatives ( numbers ){
+    return filter ( numbers , function ( element , i){
+        return element < 0 
+    })
+}
+
+***
+function evenlength ( nums) {
+    return filter ( nums , function(element , i){
+        
+        return nums.length %2===0
+    })
+}
+***
+function largerthensex( nums) {
+    return filter ( nums, function ( element , i ){ 
+        return element  >6
+    })
+}
+
+***5
+
+
+function reduce(array, f, acc) {
+    if (acc === undefined) {
+      acc = array[0];
+      array = array.slice(1);
+    }
+    each(array, function (element, i) {
+      acc = f(acc, element, i);
+    });
+    return acc;
+  }
+  function sum ( nums) {
+    return reduce ( nums, function ( acc , elemnt ,i ){
+        return acc + elemnt 
+    },0)
+}
+
+***

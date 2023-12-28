@@ -86,3 +86,37 @@ function laughWithFor(number) {
     return result
 
 }
+
+
+function laughRecursively(number) {
+
+  if ( number ===0){
+      
+      return ""
+  }
+    return laughRecursively(number-1)+"ha"
+    
+}
+
+
+*****5
+function sumRecursively(number) {
+  
+   if ( number === 0 ){ 
+       return 0
+   }
+    return number + ( factorialRecursively(number-1))
+
+}
+
+
+***** 6 
+function factorialRecursively(number) {
+  
+   if ( number === 0 ){ 
+       return 1
+   }
+    return number * ( factorialRecursively(number-1))
+
+}
+ 
